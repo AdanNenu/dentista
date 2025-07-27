@@ -12,8 +12,8 @@ const fechaInicioModal = "2025-07-10"; // Formato YYYY-MM-DD
 const fechaFinModal = "2025-07-30";    // Formato YYYY-MM-DD
 
 //URL Anuncio Cliente 
-const urlModalAnuncioClienteH = "https://www.canva.com/design/DAGtHFEdE2M/E30NZGqvTxSaQsPNHt1-Dg/watch?embed";//Se quema la variable del anuncio del cliente
-const urlModalAnuncioClienteV = "https://www.canva.com/design/DAGtHFEdE2M/E30NZGqvTxSaQsPNHt1-Dg/watch?embed";//Se quema la variable del anuncio del cliente
+const urlModalAnuncioClienteH = "";//Se quema la variable del anuncio del cliente
+const urlModalAnuncioClienteV = "";//Se quema la variable del anuncio del cliente
 let urlModalActualH = "";//Se usará par validar si la urlModalAnuncioCliente es igual a urlModalActualH
 let urlModalActualV = "";//para saber si se trata del anuncio, y agregar boton.
 
@@ -22,13 +22,13 @@ const colapsarBotonera  = true; //Si es false, funciona con normalidad. Si es Tr
 
 //Información del Cliente
 const telefonoWA = "+52";
-const telefonoMovil = "+52";
+const telefonoMovil = "+524771234567";
 const correoGmail = "";
-const urlMaps = "";
-const urlCalendy = "";
-const url1 = "https://www.ubereats.com/store-browse-uuid/664f45fe-79ba-5922-8e89-9fe5e49db02a?diningMode=DELIVERY";//Uber eats
+const urlMaps = "https://maps.app.goo.gl/SDrNf61UzYTD5FaM8";
+const urlCalendy = "https://calendly.com/adanmendezeng/reservar-espacio";
+const url1 = "";
 const url2 = ""; 
-const url3 = "";
+const url3 = ""; 
 const url4 = "";
 const url5 = ""
 const url6 = ""
@@ -36,8 +36,8 @@ const url7 = ""
 const url8 = ""
 const url9 = "";
 const url10 = ""
-const mensajeWhats = encodeURIComponent("¡Hola! Me gustaría ordenar");
-const mensajeCompartir = encodeURIComponent("¡Mira!, tu que tenías ganas de maríscos.");
+const mensajeWhats = encodeURIComponent("¡Hola!");
+const mensajeCompartir = encodeURIComponent("Sonríe con confianza.");
 const mensajeGmail = encodeURIComponent("¡Hola!");
 
 // Cargar imágenes sin que truene si no existen
@@ -174,7 +174,7 @@ const Botones = ({ onPlayPause, onRewind, onForward, onToggleMute, isMuted, isPl
 
   const compartir = async () => {
     const shareData = {
-      title: "Marísquería",
+      title: "Dentista",
       text: decodeURIComponent(mensajeCompartir),
       url: window.location.href,
     };
@@ -277,8 +277,8 @@ const Botones = ({ onPlayPause, onRewind, onForward, onToggleMute, isMuted, isPl
 
 
           const defaults = {
-            V: { galeria1: "https://www.canva.com/design/DAGuNW-pptw/E-vNnN1Zx58bfuCf7sJ3bQ/view?embed" },
-            H: { galeria1: "https://www.canva.com/design/DAGuNU-Chh4/419xbNNE8A-16Rpq6xHr-A/view?embed" },
+            H: { galeria1: "https://www.canva.com/design/DAGuUBRzATc/vd1ypOkcqGT8CzFapzKJRA/view?embed" },
+            V: { galeria1: "https://www.canva.com/design/DAGuUJCCHFI/kBg_671sTRw3IQ4ldV1aTQ/view?embed" },
           };
 		  
 			const nuevasGalerias = {
@@ -455,7 +455,7 @@ return (
 	  {/* Reproductor */}
       <div className="reproductor">
         {iconGallery1 && <button onClick={() => abrirGaleria(1)}><img src={iconGallery1} alt="Galería 1" /></button>}
-        {iconurl1 && <button onClick={() => abrirURL1()}><img src={iconurl1} alt="URL 1" /></button>}
+		{iconCalendy && <button onClick={abrirCalendy}><img src={iconCalendy} alt="Calendly" /></button>}
         {iconMiWa && <button onClick={abrirMiWhatsApp}><img src={iconMiWa} alt="WhatsApp" /></button>}
         {iconMute && iconVol && (
           <button onClick={onToggleMute}>
