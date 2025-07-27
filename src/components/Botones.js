@@ -11,7 +11,7 @@ const tipoModalPorDefecto = "anuncioCliente"; // Opciones: "miAnuncio", "anuncio
 const fechaInicioModal = "2025-07-10"; // Formato YYYY-MM-DD
 const fechaFinModal = "2025-07-30";    // Formato YYYY-MM-DD
 
-//URL Anuncio Cliente
+//URL Anuncio Cliente 
 const urlModalAnuncioClienteH = "https://www.canva.com/design/DAGtHFEdE2M/E30NZGqvTxSaQsPNHt1-Dg/watch?embed";//Se quema la variable del anuncio del cliente
 const urlModalAnuncioClienteV = "https://www.canva.com/design/DAGtHFEdE2M/E30NZGqvTxSaQsPNHt1-Dg/watch?embed";//Se quema la variable del anuncio del cliente
 let urlModalActualH = "";//Se usará par validar si la urlModalAnuncioCliente es igual a urlModalActualH
